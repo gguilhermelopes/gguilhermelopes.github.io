@@ -19,3 +19,25 @@ function scroll() {
   });
 }
 scroll();
+
+function animacaoScroll() {
+  const secoesScrollSuave = document.querySelectorAll(".js-suave");
+
+  if (secoesScrollSuave.length) {
+    const windowMetade = innerHeight * 0.6;
+
+    function animaScroll() {
+      secoesScrollSuave.forEach((section) => {
+        const sectionTop = section.getBoundingClientRect().top;
+        const isSectionVisible = sectionTop - windowMetade < 0;
+        if (isSectionVisible) {
+          section.classList.add("ativo");
+        }
+      });
+    }
+
+    animaScroll();
+    window.addEventListener("scroll", animaScroll);
+  }
+}
+animacaoScroll();

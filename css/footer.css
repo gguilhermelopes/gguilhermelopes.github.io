@@ -10,6 +10,7 @@
   grid-template-columns: 1fr 1fr;
   gap: 100px;
   align-items: center;
+  position: relative;
 }
 
 .footer-texto {
@@ -36,13 +37,30 @@
   color: #8f8f8f;
   grid-column: 1 / -1;
 }
+
+.footer-container::after {
+  content: "";
+  display: block;
+  width: 130px;
+  height: 100px;
+  background: url("../img/deco.svg") no-repeat center;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
 @media (max-width: 840px) {
   .footer-container {
     grid-template-columns: 1fr;
-    gap: 40px;
+    gap: 20px;
+    padding-top: 60px;
   }
 
   .footer-contato li {
     font-size: 1.5rem;
+  }
+
+  .footer-container::after {
+    display: none;
   }
 }
