@@ -21,6 +21,11 @@
   text-decoration: none;
   color: #141414;
   display: block;
+  transition: 0.3s;
+}
+
+.header-menu a:hover {
+  color: #828282;
 }
 
 @media (max-width: 840px) {
@@ -32,5 +37,9 @@
   .header a {
     background: #f5f5f5;
     border-radius: 6px;
+  }
+  .header-menu a:hover {
+    color: initial;
+    background: #e6e6e6;
   }
 }

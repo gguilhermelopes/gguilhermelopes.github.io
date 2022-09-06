@@ -62,6 +62,19 @@
   font-weight: bold;
 }
 
+.empresa-titulo a {
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.empresa-titulo a:visited {
+  color: inherit;
+}
+
+.empresa-titulo a:hover {
+  color: #828282;
+}
+
 .empresa-texto {
   font-size: 0.875rem;
   color: #525252;
