@@ -32,6 +32,10 @@
   text-decoration: none;
 }
 
+.footer-contato a:hover {
+  color: #cccccc;
+}
+
 .footer-copy {
   font-size: 1.125rem;
   color: #8f8f8f;
