@@ -24,7 +24,7 @@ function animacaoScroll() {
   const secoesScrollSuave = document.querySelectorAll(".js-suave");
 
   if (secoesScrollSuave.length) {
-    const windowMetade = innerHeight * 0.6;
+    const windowMetade = innerHeight * 0.7;
 
     function animaScroll() {
       secoesScrollSuave.forEach((section) => {

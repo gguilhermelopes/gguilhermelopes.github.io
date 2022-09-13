@@ -21,11 +21,12 @@
   text-decoration: none;
   color: #141414;
   display: block;
-  transition: 0.3s;
+  transition: 0.3s ease-out;
 }
 
 .header-menu a:hover {
-  color: #828282;
+  color: rgba(0, 0, 0, 0.3);
+  font-size: 1.15rem;
 }
 
 @media (max-width: 840px) {
@@ -40,6 +41,7 @@
   }
   .header-menu a:hover {
     color: initial;
-    background: #e6e6e6;
+    background: rgba(0, 0, 0, 0.2);
+    font-size: 1.125rem;
   }
 }

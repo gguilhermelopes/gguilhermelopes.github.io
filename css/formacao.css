@@ -10,19 +10,7 @@
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 100px;
-  position: relative;
 }
-
-/* .formacao-container::after {
-  content: "";
-  display: block;
-  width: 130px;
-  height: 100px;
-  background: url("../img/deco.svg") no-repeat center;
-  position: absolute;
-  bottom: 0px;
-  left: 20px;
-} */
 
 .formacao .subtitulo {
   color: #000000;
@@ -122,6 +110,16 @@
   line-height: 1.1;
   margin-bottom: 20px;
 }
+
+.formacao-extra li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.formacao-extra li a:hover {
+  color: #8f8f8f;
+}
+
 .formacao-extra span {
   color: #8f8f8f;
 }
