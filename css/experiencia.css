@@ -66,6 +66,7 @@
 .empresa-titulo a {
   text-decoration: none;
   transition: 0.3s;
+  color: inherit;
 }
 
 .empresa-titulo a:visited {
