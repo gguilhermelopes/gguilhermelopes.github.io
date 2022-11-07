@@ -36,12 +36,6 @@
   color: #cccccc;
 }
 
-.footer-copy {
-  font-size: 1.125rem;
-  color: #8f8f8f;
-  grid-column: 1 / -1;
-}
-
 .footer-container::after {
   content: "";
   display: block;
