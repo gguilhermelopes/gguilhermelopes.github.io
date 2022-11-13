@@ -10,4 +10,5 @@ scrollAnima.init();
 
 const slide = new SlideNav(".slides", ".slides-container");
 slide.init();
-slide.addArrow(".prev", ".next");
+
+slide.addControl();
