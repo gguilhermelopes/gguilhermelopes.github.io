@@ -94,7 +94,7 @@
   font-size: 0.875rem;
   line-height: 1.4;
   border-radius: 6px;
-  background: #ffffff;
+  background: var(--cor-0);
   padding: 5px 10px;
 }
 
