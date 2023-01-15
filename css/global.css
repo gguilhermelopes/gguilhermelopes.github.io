@@ -1,9 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap");
+
+:root {
+  --cor-0: #f6f6ed;
+  --cor-0-5: #e9eadd;
+  --cor-1: #d3d5bb;
+  --cor-2: #e1e3c8;
+  --cor-3: #bbbda6;
+  --cor-4: #959684;
+  --cor-4-5: #868776;
+  --cor-5: #56574c;
+  --cor-6: #4d4e44;
+  --cor-7: #1c1d1a;
+  --cor-8: #080908;
+}
 
 body {
   margin: 0px;
   font-family: "DM Sans", Arial, sans-serif;
   color: #141414;
+  background-color: var(--cor-0);
 }
 
 h1,

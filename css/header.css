@@ -7,10 +7,6 @@
   align-items: center;
 }
 
-.header h1 {
-  font-size: 3rem;
-}
-
 .header-icons {
   display: flex;
   flex-wrap: wrap;
@@ -79,7 +75,7 @@
   }
 
   .header-menu a {
-    background: #f5f5f5;
+    background: rgba(211, 213, 187, 0.15);
     border-radius: 6px;
   }
 }

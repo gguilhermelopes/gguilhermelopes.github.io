@@ -13,6 +13,7 @@
   line-height: 1.125;
   margin-bottom: 30px;
   position: relative;
+  font-family: "Libre Baskerville", serif;
 }
 
 .introducao h1::before {
@@ -20,7 +21,7 @@
   display: block;
   width: 130px;
   height: 100px;
-  background: url(../img/deco.svg) no-repeat center;
+  background: url("../img/deco.svg") no-repeat center;
   position: absolute;
   top: -15px;
   left: -40px;
@@ -49,7 +50,7 @@
     gap: 60px;
   }
   .introducao h1 {
-    font-size: 2.75rem;
+    font-size: 2.625rem;
   }
   .introducao p {
     font-size: 1.125rem;
