@@ -7,6 +7,17 @@
   align-items: center;
 }
 
+.header h1 {
+  font-size: 3rem;
+}
+
+.header-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.6rem;
+  justify-content: center;
+}
+
 .header-menu {
   display: flex;
   flex-wrap: wrap;
@@ -29,12 +40,43 @@
   transform: scale(1.05);
 }
 
+.wpp svg {
+  transition: 0.3s;
+}
+
+.wpp svg:hover {
+  fill: #2bb741;
+  transform: scale(1.15);
+}
+
+.ldin svg {
+  transition: 0.3s;
+}
+
+.ldin svg:hover {
+  fill: #0077b5;
+  transform: scale(1.15);
+}
+.ghub svg {
+  transition: 0.3s;
+}
+
+.ghub svg:hover {
+  transform: scale(1.15);
+}
+
 @media (max-width: 840px) {
   .header {
     flex-direction: column;
     gap: 30px;
     padding: 20px;
+    align-items: center;
   }
+
+  .header h1 {
+    font-size: 2.5rem;
+  }
+
   .header a {
     background: #f5f5f5;
     border-radius: 6px;
