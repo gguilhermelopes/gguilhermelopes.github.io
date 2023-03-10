@@ -16,7 +16,6 @@ export default class Slide {
     this.paused = false;
     this.thumbItens = null;
     this.activeThumb = null;
-    this.init();
   }
 
   hide(element) {

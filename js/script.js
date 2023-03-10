@@ -24,6 +24,7 @@ const controls = document.getElementById("slide-controls");
 
 if (container && elements && controls && elements.children.length) {
   const stories = new Slide(container, Array.from(elements.children), controls);
+  stories.init();
   stories.pause();
 
   const handleModalInit = () => {
