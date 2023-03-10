@@ -15,6 +15,10 @@
   --cor-8: #080908;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0px;
   font-family: "DM Sans", Arial, sans-serif;

@@ -34,7 +34,7 @@
 }
 
 .header-menu a:hover {
-  transform: scale(1.05);
+  background-color: var(--cor-0-5);
 }
 
 .wpp svg {
