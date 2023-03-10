@@ -15,7 +15,6 @@ slide.init();
 slide.addControl();
 
 const openModalButton = document.querySelector(".button-modal");
-const closeModalButton = document.querySelector(".modal-close-button");
 const modal = document.querySelector(".modalWrapper");
 
 const container = document.getElementById("slide");
@@ -32,11 +31,6 @@ if (container && elements && controls && elements.children.length) {
     stories.continue();
   };
 
-  const handleModalFinish = () => {
-    modal.classList.remove("active");
-    stories.pauseInstant();
-  };
-
   const handleOutsideClick = ({ target, currentTarget }) => {
     if (target === currentTarget) {
       stories.pauseInstant();
@@ -46,5 +40,4 @@ if (container && elements && controls && elements.children.length) {
 
   modal.addEventListener("click", handleOutsideClick);
   openModalButton.addEventListener("pointerup", handleModalInit);
-  closeModalButton.addEventListener("pointerup", handleModalFinish);
 }
