@@ -25,18 +25,26 @@ const controls = document.getElementById("slide-controls");
 if (container && elements && controls && elements.children.length) {
   const stories = new Slide(container, Array.from(elements.children), controls);
   stories.init();
-  stories.pause();
+  stories.pauseInstant();
 
-  const handleModalInit = () => {
+  const handleModalInit = ({ target }) => {
     modal.classList.add("active");
     stories.continue();
   };
 
   const handleModalFinish = () => {
     modal.classList.remove("active");
-    stories.pause();
+    stories.pauseInstant();
   };
 
-  openModalButton.addEventListener("click", handleModalInit);
-  closeModalButton.addEventListener("click", handleModalFinish);
+  const handleOutsideClick = ({ target, currentTarget }) => {
+    if (target === currentTarget) {
+      stories.pauseInstant();
+      modal.classList.remove("active");
+    }
+  };
+
+  modal.addEventListener("click", handleOutsideClick);
+  openModalButton.addEventListener("pointerup", handleModalInit);
+  closeModalButton.addEventListener("pointerup", handleModalFinish);
 }

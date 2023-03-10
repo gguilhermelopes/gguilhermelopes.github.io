@@ -63,8 +63,8 @@ video {
   flex: 1;
   display: block;
   height: 3px;
-  background-color: rgba(255, 255, 255, 0.2);
-  margin: 2.5px;
+  background-color: rgba(255, 255, 255, 0.7);
+  margin: 4px 3px;
   border-radius: 4px;
   overflow: hidden;
   isolation: isolate;
@@ -73,7 +73,7 @@ video {
 .thumb-item.active {
   display: block;
   height: inherit;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.5);
   transform: translateX(-100%);
   border-radius: 4px;
   animation: thumb forwards linear running;
