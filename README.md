@@ -13,7 +13,7 @@
 
 Projeto em andamento, veja abaixo:
 
-- [x] Desenvolvimento em HTML, CSS e JavaSript Vanilla
+- [x] Desenvolvimento em HTML, CSS e JavaScript Vanilla
 - [x] Implementação responsiva
 - [x] Criação de slides e stories para mostrar projetos de maneira mais visual
 - [ ] Desenvolvimento de um botão de tradução para Inglês
