@@ -7,6 +7,10 @@
   align-items: center;
 }
 
+.menu-mobile {
+  display: none;
+}
+
 .header-icons {
   display: flex;
   flex-wrap: wrap;
@@ -22,7 +26,57 @@
   justify-content: center;
 }
 
-.header-menu a {
+.header-menuMobileWrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100vh;
+  display: none;
+  z-index: 5;
+  justify-content: flex-end;
+}
+
+.header-menuMobileWrapper.active {
+  display: flex;
+}
+
+.header-menuMobile {
+  background-color: var(--cor-2);
+  display: flex;
+  flex-direction: column;
+  align-self: baseline;
+  align-items: center;
+  padding: 1.25rem;
+  border-radius: 4px;
+  margin: 6.5rem 20px 0 20px;
+  opacity: 0;
+  transform: translateX(20px);
+  animation: showMobileMenu 0.3s forwards;
+}
+
+@keyframes showMobileMenu {
+  to {
+    opacity: 1;
+    transform: initial;
+  }
+}
+
+.header-menuMobile ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header-menuMobile-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.header-menu a,
+.header-menuMobile a {
   font-size: 1.125rem;
   line-height: 1.3;
   padding: 10px 20px;
@@ -35,6 +89,10 @@
 
 .header-menu a:hover {
   background-color: var(--cor-0-5);
+}
+
+.header-menuMobile a[href^="#"]:hover {
+  background-color: var(--cor-1);
 }
 
 .wpp svg {
@@ -62,20 +120,46 @@
   transform: scale(1.15);
 }
 
-@media (max-width: 840px) {
-  .header {
-    flex-direction: column;
-    gap: 30px;
-    padding: 20px;
+@media (max-width: 1080px) {
+  .header-menu,
+  .header-icons {
+    display: none;
+  }
+  .menu-mobile {
+    display: flex;
     align-items: center;
+    justify-content: center;
+    padding: 0.25rem;
+    background-color: var(--cor-2);
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    transition: 0.3s;
+  }
+  .menu-mobile svg {
+    fill: var(--cor-5);
+  }
+  .menu-mobile:hover,
+  .menu-mobile:focus {
+    background-color: var(--cor-3);
   }
 
-  .header h1 {
-    font-size: 2.5rem;
+  @media (max-width: 840px) {
+    .header {
+      gap: 15px;
+      padding: 20px;
+      align-items: center;
+    }
+
+    .header h1 {
+      font-size: 2.5rem;
+    }
   }
 
-  .header-menu a {
-    background: rgba(211, 213, 187, 0.15);
-    border-radius: 6px;
+  @media (max-width: 550px) {
+    .header-menuMobile {
+      flex: 1;
+      margin: 5.5rem 20px 0 20px;
+    }
   }
 }

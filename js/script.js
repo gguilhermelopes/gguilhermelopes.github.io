@@ -1,7 +1,11 @@
 import ScrollSuave from "./scroll-suave.js";
 import ScrollAnima from "./scroll-anima.js";
+import MenuMobile from "./menu-mobile.js";
 import SlideNav from "./slide.js";
 import Slide from "./stories.js";
+
+const menuMobile = new MenuMobile(".menu-mobile", ".header-menuMobileWrapper");
+menuMobile.init();
 
 const scrollSuave = new ScrollSuave('.js-scroll a[href^="#"]');
 scrollSuave.init();
@@ -11,7 +15,6 @@ scrollAnima.init();
 
 const slide = new SlideNav(".slides", ".slides-container");
 slide.init();
-
 slide.addControl();
 
 const openModalButton = document.querySelector(".button-modal");
