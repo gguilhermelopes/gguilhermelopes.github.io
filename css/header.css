@@ -51,7 +51,7 @@
   border-radius: 4px;
   margin: 6.5rem 20px 0 20px;
   opacity: 0;
-  transform: translateX(40px);
+  transform: translateX(80px);
   animation: showMobileMenu 0.3s forwards;
 }
 
